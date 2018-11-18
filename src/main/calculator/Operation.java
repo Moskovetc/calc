@@ -1,8 +1,8 @@
 package main.calculator;
 
-public class Operation{
+public class Operation {
 
-    public static  <T extends Number> double plus(T a, T b) {
+    public static <T extends Number> double plus(T a, T b) {
         return a.doubleValue() + b.doubleValue();
     }
 
@@ -15,6 +15,6 @@ public class Operation{
     }
 
     public static <T extends Number> double div(T a, T b) {
-        return  a.doubleValue() / b.doubleValue();
+        return a.doubleValue() / b.doubleValue();
     }
 }

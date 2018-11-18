@@ -2,6 +2,7 @@ package main.calculator.expression;
 
 public class MyExpression {
     private String expression;
+
     public MyExpression(String expression) {
         this.expression = expression;
     }

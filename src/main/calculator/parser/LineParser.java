@@ -31,7 +31,7 @@ public class LineParser {
         while (matcher.find()) {
             item = matcher.group();
             negativeOperands.add(item.substring(1));
-            simpleExpression = simpleExpression.replaceFirst("\\" + item,  item.charAt(0) + "n ");
+            simpleExpression = simpleExpression.replaceFirst("\\" + item, item.charAt(0) + "n ");
         }
         operand = Pattern.compile("^-\\d+");
         matcher = operand.matcher(simpleExpression);

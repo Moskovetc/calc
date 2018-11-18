@@ -16,7 +16,7 @@ public class RPN {
         this.simpleExpression = simpleExpression;
     }
 
-    private int getPriority(char item){
+    private int getPriority(char item) {
         if (item == '(') return 1;
         if (item == '+' || item == '-') return 2;
         if (item == '*' || item == '/') return 3;
@@ -28,15 +28,14 @@ public class RPN {
         Deque<Character> stack = new ArrayDeque<>();
         int indexPositive = 0;
         int indexNegative = 0;
-        for (char symbol : simpleExpression.toCharArray()){
+        for (char symbol : simpleExpression.toCharArray()) {
             if (symbol == 'p') {
                 postFixNotation.add(positiveOperands.get(indexPositive));
                 indexPositive++;
-            } else
-            if (symbol == 'n') {
+            } else if (symbol == 'n') {
                 postFixNotation.add(negativeOperands.get(indexNegative));
                 indexNegative++;
-            }else {
+            } else {
                 if (symbol == '(')
                     stack.push(symbol);
                 else if (symbol == ')') {
