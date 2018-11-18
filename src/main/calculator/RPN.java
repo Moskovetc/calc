@@ -48,7 +48,7 @@ public class RPN {
                 } else {
                     if (!stack.isEmpty()) {
                         if (getPriority(symbol) <= getPriority(stack.peek()))
-                            postFixNotation.add(String.valueOf(symbol));
+                            postFixNotation.add(String.valueOf(stack.pop()));
                     }
                     stack.push(symbol);
                 }

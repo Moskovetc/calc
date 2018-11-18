@@ -24,6 +24,12 @@ public class Calculator {
         MyExpression simpleExpression = new MyExpression(parser.getSimpleExpression());
         simpleExpression.removeSpaces();
         RPN rpn = new RPN(parser.getNegativeOperands(), parser.getPositiveOperands(), simpleExpression.getExpression());
+
+        System.out.println(simpleExpression.getExpression());
+        System.out.println(parser.getNegativeOperands());
+        System.out.println(parser.getPositiveOperands());
+        System.out.println(rpn.getPostFixNotation());
+
         double result = 0;
         Deque<Double> tempStack = new ArrayDeque<>();
         List<String> postfixNotation = rpn.getPostFixNotation();
@@ -42,11 +48,6 @@ public class Calculator {
                 tempStack.push(result);
             }
         }
-
-        System.out.println(simpleExpression.getExpression());
-        System.out.println(parser.getNegativeOperands());
-        System.out.println(parser.getPositiveOperands());
-        System.out.println(rpn.getPostFixNotation());
         return tempStack.peek();
     }
 

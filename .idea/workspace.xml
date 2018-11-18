@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb6670cf-668a-4ed5-b69b-39b2234392bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/calculator/parser/LineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/calculator/parser/LineParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,12 +49,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3378" />
+          <entry key="java" value="3381" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3378" />
+          <entry key="JAVA" value="3381" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="207">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/calculator/RPN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-103">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="-118">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,7 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542558953568" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542561636814" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../misc" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -299,7 +298,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1" width="1372" height="745" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Learn" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.31154683" />
@@ -311,8 +309,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3306321" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3306321" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3987034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -338,9 +336,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/calculator/Calculator.java</url>
-          <line>33</line>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/calculator/RPN.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -414,8 +418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="207">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -424,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/calculator/RPN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-118">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
