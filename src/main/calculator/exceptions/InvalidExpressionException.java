@@ -1,4 +1,4 @@
-package main.calculator.parser;
+package main.calculator.exceptions;
 
 public class InvalidExpressionException extends Exception {
 }

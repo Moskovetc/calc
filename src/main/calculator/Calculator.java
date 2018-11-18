@@ -1,33 +1,32 @@
 package main.calculator;
 
+import main.calculator.exceptions.InvalidExpressionException;
+import main.calculator.expression.MyExpression;
 import main.calculator.parser.LineParser;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Calculator {
-    public void run() {
+    public void run() throws InvalidExpressionException {
         System.out.print("Claculator started!\n:");
         Scanner scanner = new Scanner(System.in);
         String result = calculate(scanner.nextLine());
         System.out.println(">" + result);
     }
 
-    private String removeSpaces(String line) {
-        return line.replaceAll("\\s+", "");
-    }
-
-    private String calculate(String line) {
-        line = removeSpaces(line);
-        LineParser parser= new LineParser(line);
-        List<String> operands = parser.getOperands();
-        List<String> operators = parser.getOperators();
-
-        System.out.println(operands + " " + operators);
-        return line;
+    private String calculate(String line) throws InvalidExpressionException {
+        MyExpression expression = new MyExpression(line);
+        expression.removeSpaces();
+        LineParser parser = new LineParser();
+        if (expression.validate()){
+            parser.parse(expression.getExpression());
+        } else throw new InvalidExpressionException();
+        MyExpression simpleExpression = new MyExpression(parser.getSimpleExpression());
+        simpleExpression.removeSpaces();
+        System.out.println(simpleExpression.getExpression());
+        System.out.println(parser.getNegativeOperands());
+        System.out.println(parser.getPositiveOperands());
+        return expression.getExpression();
     }
 
 }
